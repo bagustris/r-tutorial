@@ -10,19 +10,22 @@ R can be downloaded [here](https://cran.r-project.org/mirrors.html).
 
 For Ubuntu-based system, you can insall latest R with the following steps
 1. Add the R repository to your source list
-
-   `$ sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list`
+   ~~~
+   $ sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list
+   ~~~
+   {: .bash}
 2. Add R to Ubuntu keyring
    ~~~
    $ gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
    $ gpg -a --export E084DAB9 | sudo apt-key add -
    ~~~
+   {: .bash}
 3. Install R base
    ~~~
    $ sudo apt-get update
    $ sudo apt-get install r-base r-base-dev
    ~~~
-
+   {: .bash}
 
 RStudio is an environment for developing using R.
 It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/).
