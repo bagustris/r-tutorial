@@ -8,6 +8,22 @@ This lesson assumes you have the R, RStudio software installed on your computer.
 
 R can be downloaded [here](https://cran.r-project.org/mirrors.html).
 
+For Ubuntu-based system, you can insall latest R with the following steps
+1. Add the R repository to your source list
+
+   `$ sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list`
+2. Add R to Ubuntu keyring
+   ~~~
+   $ gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+   $ gpg -a --export E084DAB9 | sudo apt-key add -
+   ~~~
+3. Install R base
+   ~~~
+   $ sudo apt-get update
+   $ sudo apt-get install r-base r-base-dev
+   ~~~
+
+
 RStudio is an environment for developing using R.
 It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/).
 You will need the Desktop version for your computer.
